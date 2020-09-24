@@ -2,6 +2,7 @@ package tests;
 
 import org.junit.After;
 import org.junit.Before;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Browser;
 import utils.Utils;
 
@@ -15,6 +16,7 @@ public class BaseTest {
 
     @After
     public void tearDown(){
+        Browser.print();
         Browser.close();
     }
 
